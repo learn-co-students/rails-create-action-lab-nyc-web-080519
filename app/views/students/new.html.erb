@@ -1,1 +1,9 @@
 <!-- Create your form here -->
+
+<h1>Student Form</h1>
+
+<%= form_tag '/students' do %> <%#replaces form action="/clowns" method="POST" AND authentication %>
+    <%= text_field_tag :first_name %>
+    <%= text_field_tag :last_name %>
+    <%= submit_tag "Submit Student" %>
+<% end %>
